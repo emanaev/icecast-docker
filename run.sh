@@ -1,9 +1,4 @@
-# Icecast running in relay mode
-
-Uses environment variables to configure relay
-
-Example usage:
-```bash
+#!/bin/sh
 docker run -it --rm -p 8000:8000 --name icecast \
   -e RELAY_IP=198.50.156.36 \
   -e RELAY_PORT=8708 \
@@ -11,4 +6,3 @@ docker run -it --rm -p 8000:8000 --name icecast \
   -e LOCAL_PATH=/stream \
   -e HOSTNAME=example.com \
   sonm/icecast
-```
